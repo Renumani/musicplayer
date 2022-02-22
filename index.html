@@ -1,0 +1,37 @@
+
+<html>
+<head>
+<title>MUSIC player</title>
+<script src="https://kit.fontawesome.com/6fffa8d5ef.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">/
+</head>
+<body>
+<nav id="navitems">
+<i class="fa fa-music" aria-hidden="true"> <small style="font-size:30px; letter-spacing:5px;">MUSIC</small></i>
+<ul>
+<li><a href="#">Music </a></li>
+<li><a href="#">Aritists </a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Home</a></li>
+</ul>
+</nav>
+<div class="container">
+<h4> Music Player </h4>
+<img id="track-img">
+<p id="title">title</p>
+<marquee id="artist">artist name</marquee>
+<input type="range" id="duration-slider" min="0" max="100" value="0" onclick ="changeduration()">
+<button id="prev" onclick="previoussong()"><i class="fa fa-step-backward"></i></button>
+<button id="pla" onclick="justplay()"><i class="fa fa-play"></i></button>
+<button id="next" onclick="nextsong()"><i class="fa fa-step-forward"></i></button>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
